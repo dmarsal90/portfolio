@@ -736,3 +736,9 @@ h3.my-profession {
     max-width: 100%;
   }
 }
+@media (max-width: 418px){
+.about .about-content .personal-info .buttons .btn:nth-child(1){
+  margin-bottom: 50px;
+}
+}
+
