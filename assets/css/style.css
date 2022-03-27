@@ -416,6 +416,9 @@ h3.my-profession {
   margin-right: 15px;
   margin-top: 10px;
 }
+.about .about-content .personal-info .buttons .btn:nth-child(1){
+  margin-bottom: 50px;
+ } 
 
 .about .about-content .skills {
   flex: 0 0 40%;
