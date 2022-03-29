@@ -9,8 +9,11 @@
   <link rel="icon" href="assets/img/perfil.png">
   <!-- CSS files -->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/color.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/skins/color.css" rel="stylesheet" type="text/css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+
+  <link href="assets/css/skins/color.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-1" disabled />
+  <link rel="stylesheet" href="assets/css/style-switcher.css" type="text/css">
 
 </head>
 
@@ -18,7 +21,7 @@
   <!-- Main container start-->
   <div class="main-container">
     <!-- Aside start-->
-    <div class="aside">
+    <div class="aside aside-responsive">
       <div class="logo">
         <a href="index.html"><span>p</span>ortfolio</a>
       </div>
@@ -376,29 +379,31 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="contact-form">
-              <div class="form-item col-12 padd-15">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Asunto">
+          <form>
+            <div class="row">
+              <div class="contact-form">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Asunto">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="contact-form">
-              <div class="form-item col-12 padd-15">
-                <div class="form-group">
-                  <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+            <div class="row">
+              <div class="contact-form">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="form-item col-12 padd-15">
-              <button class="btn send" type="submit">Enviar Email</button>
+            <div class="row">
+              <div class="form-item col-12 padd-15">
+                <button class="btn send" type="submit">Enviar Email</button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
       <!-- Contact section end -->
@@ -406,6 +411,24 @@
     <!-- Main content end-->
   </div>
   <!-- Main container end-->
+  <!-- Style switcher start-->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas fa-moon"></i>
+    </div>
+    <h4>Temas de colores</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- Style switcher end-->
   <!-- JS files -->
   <script src="assets/js/scripts.js"></script>
   <script src="./assets/js/typed-2.0.6.js"></script>
@@ -414,7 +437,7 @@
   <script>
     $('document').ready(function () {
       var typed = new Typed('.typing', {
-        strings: ['Desarrollador web', 'Diseñador web', 'Diseñador de base de datos'],
+        strings: ['Desarrollador web', 'Diseñador web', 'Diseñador de BD'],
         typeSpeed: 100,
         backSpeed: 60,
         cursorChar: '|',
