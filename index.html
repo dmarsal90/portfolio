@@ -9,8 +9,20 @@
   <link rel="icon" href="assets/img/perfil.png">
   <!-- CSS files -->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/color.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/skins/color.css" rel="stylesheet" type="text/css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+
+  <link href="assets/css/skins/color.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-1"
+    disabled />
+  <link href="assets/css/skins/color-2.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-2"
+    disabled />
+  <link href="assets/css/skins/color-3.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-3"
+    disabled />
+  <link href="assets/css/skins/color-4.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-4"
+    disabled />
+  <link href="assets/css/skins/color-5.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-5"
+    disabled />
+  <link rel="stylesheet" href="assets/css/style-switcher.css" type="text/css">
 
 </head>
 
@@ -18,9 +30,9 @@
   <!-- Main container start-->
   <div class="main-container">
     <!-- Aside start-->
-    <div class="aside">
+    <div class="aside aside-responsive">
       <div class="logo">
-        <a href="index.html"><span>p</span>ortfolio</a>
+        <a href="index.html">Portfolio</a>
       </div>
       <div class="nav-toggler"><span></span></div>
       <ul class="nav">
@@ -173,7 +185,8 @@
                           </h3>
                           <h4 class="timeline-title">Ingeniería Informática</h4>
                           <h5 class="timeline-place">Universidad Ignacio Agramonte y Loynaz</h5>
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis assumenda,
+                          <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis
+                            assumenda,
                             non, vero facilis distinctio consequuntur provident est quibusdam magnam nesciunt corporis
                             molestias soluta ipsam voluptatum minima necessitatibus dolorum possimus.</p>
 
@@ -185,7 +198,8 @@
                           </h3>
                           <h4 class="timeline-title">Postgrado en criptografía</h4>
                           <h5 class="timeline-place">UCI</h5>
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis assumenda,
+                          <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis
+                            assumenda,
                             non, vero facilis distinctio consequuntur provident est quibusdam magnam nesciunt corporis
                             molestias soluta ipsam voluptatum minima necessitatibus dolorum possimus.</p>
 
@@ -208,7 +222,8 @@
                           </h3>
                           <h4 class="timeline-title">Administrador de red</h4>
                           <h5 class="timeline-place">CITMA</h5>
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis assumenda,
+                          <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis
+                            assumenda,
                             non, vero facilis distinctio consequuntur provident est quibusdam magnam nesciunt corporis
                             molestias soluta ipsam voluptatum minima necessitatibus dolorum possimus.</p>
 
@@ -220,7 +235,8 @@
                           </h3>
                           <h4 class="timeline-title">Desarrollador Web</h4>
                           <h5 class="timeline-place">AHPC</h5>
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis assumenda,
+                          <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis
+                            assumenda,
                             non, vero facilis distinctio consequuntur provident est quibusdam magnam nesciunt corporis
                             molestias soluta ipsam voluptatum minima necessitatibus dolorum possimus.</p>
 
@@ -232,7 +248,8 @@
                           </h3>
                           <h4 class="timeline-title">Desarrollador Web</h4>
                           <h5 class="timeline-place">CDAIf</h5>
-                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis assumenda,
+                          <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, quis
+                            assumenda,
                             non, vero facilis distinctio consequuntur provident est quibusdam magnam nesciunt corporis
                             molestias soluta ipsam voluptatum minima necessitatibus dolorum possimus.</p>
 
@@ -360,45 +377,48 @@
           </div>
           <h3 class="contact-title">Envíame un Email</h3>
           <!-- contact item -->
-          <div class="row">
-            <div class="contact-form padd-15">
+          <form>
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form>
               <div class="row">
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Nombre">
-                  </div>
-                </div>
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Email">
+                <div class="contact-form">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Asunto">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="contact-form">
-              <div class="form-item col-12 padd-15">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Asunto">
+              <div class="row">
+                <div class="contact-form">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="contact-form">
-              <div class="form-item col-12 padd-15">
-                <div class="form-group">
-                  <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button class="btn send" type="submit">Enviar Email</button>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-item col-12 padd-15">
-              <button class="btn send" type="submit">Enviar Email</button>
-            </div>
-          </div>
+            </form>
         </div>
       </section>
       <!-- Contact section end -->
@@ -406,15 +426,34 @@
     <!-- Main content end-->
   </div>
   <!-- Main container end-->
+  <!-- Style switcher start-->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas fa-moon"></i>
+    </div>
+    <h4>Temas de colores</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- Style switcher end-->
   <!-- JS files -->
   <script src="assets/js/scripts.js"></script>
   <script src="./assets/js/typed-2.0.6.js"></script>
   <script src="./assets/js/jquery-3.6.0.js"></script>
+  <script src="assets/js/style-switcher.js"></script>
   <!-- typing animation -->
   <script>
     $('document').ready(function () {
       var typed = new Typed('.typing', {
-        strings: ['Desarrollador web', 'Diseñador web', 'Diseñador de base de datos'],
+        strings: ['Desarrollador web', 'Diseñador web', 'Diseñador de BD'],
         typeSpeed: 100,
         backSpeed: 60,
         cursorChar: '|',
