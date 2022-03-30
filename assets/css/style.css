@@ -803,11 +803,19 @@ h3.my-profession {
     text-align: center;
   }
 
+<<<<<<< HEAD
   .home-img {
     display: none;
   }
 
   /* .home .home-img img {
+=======
+  .home-img{
+    display: none;
+  }
+
+ /* .home .home-img img {
+>>>>>>> b410d0a6db40af9fb55be6e5dda39c83721ca4f0
     height: 220px;
     margin-left: 90px;
     border-radius: 5px;
@@ -872,7 +880,10 @@ h3.my-profession {
   .about .about-content .personal-info .buttons .btn:nth-child(1) {
     margin-bottom: 50px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b410d0a6db40af9fb55be6e5dda39c83721ca4f0
   /*
   .home .home-img img {
     height: 200px;
