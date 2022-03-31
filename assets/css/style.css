@@ -803,50 +803,10 @@ h3.my-profession {
     text-align: center;
   }
 
-<<<<<<< HEAD
+
   .home-img {
     display: none;
   }
-
-  /* .home .home-img img {
-=======
-  .home-img{
-    display: none;
-  }
-
- /* .home .home-img img {
->>>>>>> b410d0a6db40af9fb55be6e5dda39c83721ca4f0
-    height: 220px;
-    margin-left: 90px;
-    border-radius: 5px;
-    position: relative;
-    top:-420px;    
-    margin-bottom: 20px;
-  }
-  .home-img::after {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    right: 70px;
-    top: 290px;
-    border-bottom: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-  }
-
-  .home-img::before {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    left: 65px;
-    top: 115px;
-    border-top: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-  }
-  .my-profession{
-    padding-top: 250px;
-  } */
 
   .contact .contact-info-item,
   .portfolio .portfolio-item,
@@ -880,43 +840,4 @@ h3.my-profession {
   .about .about-content .personal-info .buttons .btn:nth-child(1) {
     margin-bottom: 50px;
   }
-<<<<<<< HEAD
-
-=======
->>>>>>> b410d0a6db40af9fb55be6e5dda39c83721ca4f0
-  /*
-  .home .home-img img {
-    height: 200px;
-    margin-left: 90px;
-    border-radius: 5px;
-    position: relative;
-    top: -580px;
-    margin-bottom: 20px;
-  }
-
-  .home-img::after {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    right: 70px;
-    top: 290px;
-    border-bottom: 5px solid var(--skin-color);
-    border-right: 5px solid var(--skin-color);
-  }
-
-  .home-img::before {
-    content: "";
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    left: 65px;
-    top: 115px;
-    border-top: 5px solid var(--skin-color);
-    border-left: 5px solid var(--skin-color);
-  }
-
-  .my-profession {
-    padding-top: 200px;
-  }*/
-}
+ }
