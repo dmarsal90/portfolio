@@ -24,7 +24,8 @@
     disabled />
   <link href="assets/css/skins/color-5.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-5"
     disabled />
-  <link href="assets/css/skins/color.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-1" disabled />
+  <link href="assets/css/skins/color.css" rel="stylesheet" type="text/css" class="alternate-style" title="color-1"
+    disabled />
   <link rel="stylesheet" href="assets/css/style-switcher.css" type="text/css">
 
 </head>
@@ -61,7 +62,7 @@
     <div class="main-content">
       <!-- Home section start -->
       <section class="home section">
-        <div class="container">
+        <div class="container" data-aos="fade-down">
           <div class="row">
             <div class="home-info padd-15">
               <h3 class="hello">
@@ -85,9 +86,9 @@
       <!-- Home section end -->
       <!-- About section start -->
       <section class="about section" id="about">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title padd-15" data-aos="fade-right">
               <h2>Acerca de mi</h2>
             </div>
           </div>
@@ -102,7 +103,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="personal-info padd-15">
+                <div class="personal-info padd-15" data-aos="fade-up-left">
                   <div class="row">
                     <div class="info-item padd-15">
                       <p>Sitio Web: <span>www.domain.com</span></p>
@@ -128,7 +129,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="skills padd-15">
+                <div class="skills padd-15" data-aos="fade-up-right">
                   <div class="row">
                     <div class="skill-item padd-15">
                       <h5>HTML</h5>
@@ -176,7 +177,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="education padd-15">
+                <div class="education padd-15" data-aos="fade-right">
                   <h3 class="title">Educación</h3>
                   <div class="row">
                     <div class="timeline-box padd-15">
@@ -213,7 +214,7 @@
                 </div>
 
 
-                <div class="experience padd-15">
+                <div class="experience padd-15" data-aos="fade-left">
                   <h3 class="title">Experiencia</h3>
                   <div class="row">
                     <div class="timeline-box padd-15">
@@ -272,12 +273,12 @@
       <section class="service section" id="service">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title padd-15" data-aos="fade-right">
               <h2>Servicios</h2>
             </div>
           </div>
           <div class="row">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-down-right">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-laptop-code"></i>
@@ -286,7 +287,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste dicta mollitia!</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="flip-up">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-laptop"></i>
@@ -295,7 +296,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste dicta mollitia!</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-down-left">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-palette"></i>
@@ -304,7 +305,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste dicta mollitia!</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up-right">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-mobile-alt"></i>
@@ -313,7 +314,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste dicta mollitia!</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="flip-down">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-database"></i>
@@ -322,7 +323,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste dicta mollitia!</p>
               </div>
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up-left">
               <div class="service-item-inner">
                 <div class="icon">
                   <i class="fa fa-bullhorn"></i>
@@ -339,7 +340,7 @@
       <section class="portfolio section" id="portfolio">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title padd-15" data-aos="fade-right">
               <h2>Portafolio</h2>
             </div>
           </div>
@@ -350,88 +351,96 @@
       <section class="contact section" id="contact">
         <div class="container">
           <div class="row">
-            <div class="section-title padd-15">
+            <div class="section-title padd-15" data-aos="fade-right">
               <h2>Contacto</h2>
             </div>
           </div>
-          <h3 class="contact-title">Tienes alguna pregunta?</h3>
-          <h4 class="contact-sub-title">Estoy a tu servicio</h4>
+          <div data-aos="fade-down-right">
+            <h3 class="contact-title">Tienes alguna pregunta?</h3>
+          </div>
+          <div data-aos="fade-down-left">
+            <h4 class="contact-sub-title">Estoy a tu servicio</h4>
+          </div>
           <div class="row">
-            <div class="contact-info-item padd-15">
+            <div class="contact-info-item padd-15" data-aos="zoom-in-up">
               <div class="icon"><i class="fa fa-phone-alt"></i></div>
               <h4>Llámame</h4>
               <p>(+53) 53009830</p>
             </div>
-            <div class="contact-info-item padd-15">
+            <div class="contact-info-item padd-15" data-aos="zoom-in-up">
               <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
               <h4>Ubicación</h4>
               <p>Camagüey, Cuba</p>
             </div>
-            <div class="contact-info-item padd-15">
+            <div class="contact-info-item padd-15" data-aos="zoom-in-up">
               <div class="icon"><i class="fa fa-envelope"></i></div>
               <h4>Email</h4>
               <p>davidmarsalivars@gmail.com</p>
             </div>
-            <div class="contact-info-item padd-15">
+            <div class="contact-info-item padd-15" data-aos="zoom-in-up">
               <div class="icon"><i class="fa fa-globe"></i></div>
               <h4>Sitio Web</h4>
               <p>https://dmarsal90.github.io/portfolio/</p>
             </div>
           </div>
-          <h3 class="contact-title">Envíame un Email</h3>
+          <div data-aos="zoom-in-up">
+            <h3 class="contact-title">Envíame un Email</h3>
+          </div>
           <!-- contact item -->
           <form>
-            <div class="row">
-              <div class="contact-form padd-15">
+            <div data-aos="zoom-out">
+              <div class="row">
+                <div class="contact-form padd-15">
+                  <div class="row">
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                      </div>
+                    </div>
+                    <div class="form-item col-6 padd-15">
+                      <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <form>
                 <div class="row">
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                  </div>
-                  <div class="form-item col-6 padd-15">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email">
+                  <div class="contact-form">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Asunto">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="row">
+                  <div class="contact-form">
+                    <div class="form-item col-12 padd-15">
+                      <div class="form-group">
+                        <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <button class="btn send" type="submit">Enviar Email</button>
+                  </div>
+                </div>
             </div>
-
-            <form>
-              <div class="row">
-                <div class="contact-form">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Asunto">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="contact-form">
-                  <div class="form-item col-12 padd-15">
-                    <div class="form-group">
-                      <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <button class="btn send" type="submit">Enviar Email</button>
-                </div>
-              </div>
-            </form>
-
-          </div>
-          
+          </form>
 
         </div>
-      </section>
-      <!-- Contact section end -->
+
+
     </div>
-    <!-- Main content end-->
+    </section>
+    <!-- Contact section end -->
+  </div>
+  <!-- Main content end-->
   </div>
   <!-- Main container end-->
   <!-- Style switcher start-->
