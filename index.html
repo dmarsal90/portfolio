@@ -387,31 +387,31 @@
             <h3 class="contact-title">Envíame un Email</h3>
           </div>
           <!-- contact item -->
-          <form>
+          <form onsubmit="sendEmail(); reset(); return false;">
             <div data-aos="zoom-out">
               <div class="row">
                 <div class="contact-form padd-15">
                   <div class="row">
                     <div class="form-item col-6 padd-15">
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre">
+                        <input type="text" id="name" class="form-control" placeholder="Nombre">
                       </div>
                     </div>
                     <div class="form-item col-6 padd-15">
                       <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" id="email" class="form-control" placeholder="Email">
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <form>
+              <form >
                 <div class="row">
                   <div class="contact-form">
                     <div class="form-item col-12 padd-15">
                       <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Asunto">
+                        <input type="text" id="subject" class="form-control" placeholder="Asunto">
                       </div>
                     </div>
                   </div>
@@ -420,7 +420,7 @@
                   <div class="contact-form">
                     <div class="form-item col-12 padd-15">
                       <div class="form-group">
-                        <textarea name="" class="form-control" id="" placeholder="Mensaje"></textarea>
+                        <textarea name="" id="text" class="form-control" id="" placeholder="Mensaje"></textarea>
                       </div>
                     </div>
                   </div>
@@ -451,7 +451,7 @@
     <div class="day-night s-icon">
       <i class="fas fa-moon"></i>
     </div>
-    <h4>Temas de colores</h4>
+    <h4 class="text-colors">Temas de colores</h4>
     <div class="colors">
       <span class="color-1" onclick="setActiveStyle('color')"></span>
       <span class="color-2" onclick="setActiveStyle('color-2')"></span>
@@ -467,6 +467,24 @@
   <script src="./assets/js/jquery-3.6.0.js"></script>
   <script src="assets/js/style-switcher.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- email -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      Email.send({
+        SecureToken: "918d1255-456a-4dda-a531-8ea55a135ab9",
+        /* SecureToken: "92bb2bb6-4478-4f34-a6ae-6e52881269ed", */
+        To: 'davidmarsalivars@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: document.getElementById("subject").value,
+        Body: "Nombre: " + document.getElementById("name").value
+          + "<br> Email: " + document.getElementById("email").value
+          + "<br> Mensaje: " + document.getElementById("text").value
+      }).then(
+        message => alert("Email enviado correctamente")
+      );
+    }
+  </script>
   <!-- typing animation -->
   <script>
     $('document').ready(function () {
